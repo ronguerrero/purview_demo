@@ -99,7 +99,7 @@ def applyToUC(databricksEnv, ucTable):
             else:
                 print(f"Request failed with status code {response.status_code}")
                 print("Error:", response.text)
-                return
+                
     return
 
 
@@ -132,6 +132,7 @@ def clearUCTable(ucTable):
         else:
             print(f"Request failed with status code {response.status_code}")
             print("Error:", response.text)
+            return
 
 
         tag_clause = ""
